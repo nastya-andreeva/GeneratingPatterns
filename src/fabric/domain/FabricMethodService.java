@@ -9,7 +9,7 @@ import static fabric.domain.Configuration.WEB;
 
 public class FabricMethodService {
     public void exec() {
-        Configuration configuration = Configuration.initMob();
+        Configuration configuration = Configuration.initMob(); // initWeb для вывода render WebButton
         Dialog dialog;
         switch (configuration.getPlatform()) {
             case WEB -> dialog = new WebDialog();

@@ -1,6 +1,6 @@
 package singleton.data;
 
-abstract public class Connection {
+public class Connection {
     private static ItemDb INSTANCE;
 
     public static ItemDb getInstance() {

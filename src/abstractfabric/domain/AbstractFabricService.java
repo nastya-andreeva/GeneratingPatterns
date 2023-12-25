@@ -11,7 +11,7 @@ import static abstractfabric.domain.Configuration.WEB;
 
 public class AbstractFabricService {
     private FormElementFactory initFactory() {
-        Configuration configuration = Configuration.initWeb();
+        Configuration configuration = Configuration.initWeb(); // initMob
         FormElementFactory factory;
         switch (configuration.getPlatform()) {
             case (WEB) -> factory = new WebFormElementFactory();
